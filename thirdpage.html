@@ -3,7 +3,7 @@
 
 <head>
     <meta name="author" content="Tiger Adrián, Maró Bence Dániel és Dobóczi Levente">
-    <script src="script.js"></script>
+
     <link rel="stylesheet" href="Styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,123 @@
             <li><a href="index.html">Kezdőlap</a></li>
             <li><a href="secondpage.html">Táblázat</a></li>
             <li class="active"><a href="thirdpage.html">Harmadik</a></li>
-            <li><a href="fourthpage.html">Negyedik</a></li>
+            <li><a href="fourthpage.html">Autó Showcase</a></li>
             <li><a href="fifthpage.html">Űrlap</a></li>
         </ul>
     </nav>
     <div class="content">
-    </div>
+        <h1>Vásárlói Vélemények</h1>
 
+        <div class="reviews">
+            <div class="review">
+                <img src="Pictures/profile.png" alt="Customer 1" class="review-img">
+                <p class="review-text">"Nagyon elégedett vagyok a termékkel! Minden elvárásomat felülmúlta. Kiváló
+                    minőség és gyors kiszállítás!"</p>
+                <p class="review-author">Kovács Péter</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review">
+                <img src="Pictures/profile.png" alt="Customer 2" class="review-img">
+                <p class="review-text">"Igazán könnyen használható, és minden részletre odafigyeltek. Bátran ajánlom
+                    mindenkinek!"</p>
+                <p class="review-author">Szabó Anna</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review">
+                <img src="Pictures/profile.png" alt="Customer 3" class="review-img">
+                <p class="review-text">"Ez volt az egyik legjobb vásárlásom! Nagyon szép design és tökéletesen működik.
+                    Mindenkinek ajánlom!"</p>
+                <p class="review-author">Tóth Dávid</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+
+            <div class="review">
+                <img src="Pictures/profile.png" alt="Customer 4" class="review-img">
+                <p class="review-text">"Szuper termék! Nagyon tetszik, hogy könnyen illeszkedik a mindennapi életbe, és
+                    sokkal kényelmesebbé tette a napi rutint!"</p>
+                <p class="review-author">Németh Laura</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review">
+                <img src="Pictures/profile.png" alt="Customer 5" class="review-img">
+                <p class="review-text">"Az ára nagyon jó, a minőség pedig kiemelkedő. Már másoknak is ajánlottam!"</p>
+                <p class="review-author">Horváth Balázs</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review">
+                <img src="Pictures/profile.png" alt="Customer 6" class="review-img">
+                <p class="review-text">"Nagyon elégedett vagyok a termékkel, mindent pontosan úgy kaptam meg, ahogy azt
+                    ígérték!"</p>
+                <p class="review-author">Kiss Zoltán</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review">
+                <img src="Pictures/profile.png" alt="Customer 7" class="review-img">
+                <p class="review-text">"Minden tökéletesen működik! Nem is gondoltam volna, hogy ilyen egyszerű a
+                    használata." </p>
+                <p class="review-author">Jánosi Éva</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review">
+                <img src="Pictures/profile.png" alt="Customer 8" class="review-img">
+                <p class="review-text">"Végre egy olyan termék, ami valóban megfelel az elvárásaimnak! Nagyon jó
+                    ár-érték arány." </p>
+                <p class="review-author">Kovács Zsófia</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review">
+                <img src="Pictures/profile.png" alt="Customer 9" class="review-img">
+                <p class="review-text">"Az egyik legjobb vásárlásom! A termék pont olyan, mint amire szükségem volt."
+                </p>
+                <p class="review-author">Farkas Dániel</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review">
+                <img src="Pictures/profile.png" alt="Customer 10" class="review-img">
+                <p class="review-text">"Nagyon kényelmes és gyors! Azonnal észrevettem a különbséget." </p>
+                <p class="review-author">Péter Tamás</p>
+                <div class="stars">⭐⭐⭐⭐</div>
+            </div>
+
+            <h2>Adj hozzá véleményt!</h2>
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="name">Neved:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-text">Véleményed:</label>
+                    <textarea id="review-text" name="review-text" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Értékelés:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="1">1 csillag</option>
+                        <option value="2">2 csillag</option>
+                        <option value="3">3 csillag</option>
+                        <option value="4">4 csillag</option>
+                        <option value="5">5 csillag</option>
+                    </select>
+                </div>
+
+                <button type="submit">Vélemény hozzáadása</button>
+            </form>
+        </div>
+
+    </div>
+    </div>
+    <script src="Script/script.js"></script>
 </body>
 
 </html>

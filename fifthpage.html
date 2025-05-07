@@ -16,11 +16,49 @@
             <li><a href="index.html">Kezdőlap</a></li>
             <li><a href="secondpage.html">Táblázat</a></li>
             <li><a href="thirdpage.html">Harmadik</a></li>
-            <li><a href="fourthpage.html">Negyedik</a></li>
+            <li><a href="fourthpage.html">Autó Showcase</a></li>
             <li class="active"><a href="fifthpage.html">Űrlap</a></li>
         </ul>
     </nav>
 
+    <div class="content">
+        <h1 class="H1">Segítségkérő űrlap</h1>
+
+        <form id="helpForm">
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email cím:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Telefonszám:</label>
+            <input type="number" id="phone" name="phone" required>
+        
+            <label for="location">Tartózkodási hely:</label>
+            <input type="text" id="location" name="location" placeholder="Pl. Budapest, 10. kerület" required>
+        
+            <label for="problem">Mi a probléma?</label>
+            <textarea id="problem" name="problem" rows="4" required></textarea>
+        
+            <label for="urgency">Sürgősség:</label>
+            <select id="urgency" name="urgency">
+                <option value="low">Nem sürgős</option>
+                <option value="medium">Közepesen sürgős</option>
+                <option value="high">Nagyon sürgős</option>
+            </select>
+        
+            <button type="submit">Segítség kérése</button>
+        </form>
+        
+        <div class="form-images">
+            <img src="Pictures/help.png" alt="Help">
+            <img src="Pictures/Crew.png" alt="Helping crew">
+            <img src="Pictures/Towing.jpg" alt="Autómentés">
+        </div>
+
+    </div>
+
+    <script src="Script/script.js"></script>
 </body>
 
 </html>

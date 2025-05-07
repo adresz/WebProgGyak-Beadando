@@ -158,3 +158,79 @@ a
     text-decoration: none;
     color: black;
 }
+form {
+    margin-left: 25%;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+form label {
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-images {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.form-images img {
+    width: 30%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+#showcase {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Autókép stílusok */
+#showcase img {
+    width: 75%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#showcase img:hover {
+    transform: scale(1.02);
+}
+
+.review
+{
+    display:block
+}
+.review-img
+{
+    width: 10%;
+}
