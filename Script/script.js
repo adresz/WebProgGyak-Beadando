@@ -62,22 +62,6 @@
     }
 });
 
-
-window.onload = function () {
-    setTimeout(() => {
-        let speed = 1;
-
-        function autoScroll() {
-            window.scrollBy(0, speed);
-            if ((window.innerHeight + window.scrollY) < document.body.offsetHeight) {
-                requestAnimationFrame(autoScroll);
-            }
-        }
-
-        autoScroll();
-    }, 500); // vár egy kicsit, hogy a képek betöltődjenek
-};
-
     // Vélemény hozzáadása a listához
     document.getElementById("review-form").addEventListener("submit", function (event) {
         event.preventDefault();  // Megakadályozza az alapértelmezett űrlap elküldést
